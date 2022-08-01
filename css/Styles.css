@@ -1,0 +1,98 @@
+
+
+.header{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color:#F2F2F2;
+    width: 100%;
+    display:flex;
+    flex-direction:column;
+}
+body{
+    background-color: #fff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+ul{
+    list-style-type: none;
+    font-weight: bold;
+}
+a:hover{
+    color:#ff5c0f;
+}
+
+.code{
+    color:#ff5c0f
+}
+.learn_to{
+    background-color: #F2F2F2;
+    display: inline;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:#20a8b4;
+    float: left;
+}
+button:hover{
+    background-color: #ff5c0f;
+}
+button{
+    width:100%;
+    background-color: #20a8b4;
+    padding: 12px;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: bold;
+}
+img{
+    display: none;
+    float:right;
+}
+@media screen and (min-width: 768px) {
+    /*Changes to the head when the screen gets big enough*/
+    .header{
+        /*this changes it into a row that takes up the top of the screen*/
+        width: 100%;
+       flex-direction: row;
+       justify-content: right;
+       align-items: center;
+       
+    }
+    
+    ul{
+        float:inline-end
+    
+    }
+    li{
+        
+        justify-content: right;
+        padding: 10px;
+        display: inline;
+    }
+
+     .learn_to{
+        position: absolute;
+        float: left;
+        top:0%;
+        background-color: transparent;
+    }
+    button{
+        width: auto;
+    }
+    /*Body modifiers*/
+    body{
+        background-color: #fff;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;    
+    }
+    /*makes the text appear on the left*/
+    .left-body{
+        height: 50px;
+        width: 50%;
+        float: left;
+    }
+    /*make the image apear when the screen is big enough and makes it appear on the right*/
+    img{
+        display: inline;
+        height:auto;
+        width: 50%;
+        float: right;
+    }
+}
